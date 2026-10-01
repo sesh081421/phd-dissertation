@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ph.D. dissertation website of Sanghun Sel, Pusan National University." />
+  <title>Representation Learning for Biological Inference from Single-Cell Transcriptomics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="container hero-inner">
+      <p class="eyebrow">Ph.D. Dissertation</p>
+      <h1>Representation Learning for Biological Inference from Single-Cell Transcriptomics</h1>
+      <p class="author">Sanghun Sel</p>
+      <p class="meta">
+        Advisor: Giltae Song<br />
+        Division of AI, Pusan National University<br />
+        February 2027
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#overview">View Dissertation Overview</a>
+        <a class="button secondary" href="#resources">Research Resources</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#overview">Overview</a>
+      <a href="#motivation">Motivation</a>
+      <a href="#research">Research</a>
+      <a href="#results">Results</a>
+      <a href="#resources">Resources</a>
+      <a href="#references">References</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="overview" class="section">
+      <div class="container narrow">
+        <h2>Dissertation Overview</h2>
+        <p>
+          This dissertation investigates representation learning strategies for extracting biologically
+          meaningful information from single-cell transcriptomic data. The work focuses on how learned
+          representations can support three complementary forms of biological inference: robust cellular
+          characterization, transcription-factor-centered regulatory prioritization, and compact gene
+          measurement that preserves biologically relevant variation.
+        </p>
+        <p>
+          Across the dissertation, the central question is how transcriptomic representations can be
+          designed to retain the biological signals that matter for downstream inference while reducing
+          noise, dimensionality, and task-specific limitations. The studies collectively connect cellular
+          identity, gene regulation, and targeted measurement within a unified representation-learning
+          perspective.
+        </p>
+      </div>
+    </section>
+
+    <section id="motivation" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <span>01</span>
+          <div>
+            <h2>Research Motivation</h2>
+            <p class="lead">
+              Single-cell RNA sequencing provides high-dimensional measurements of cellular state, but
+              biological interpretation remains challenging because useful signals are distributed across
+              noisy, sparse, and highly redundant gene-expression profiles.
+            </p>
+          </div>
+        </div>
+        <div class="grid three">
+          <article class="card">
+            <h3>Cellular Representation</h3>
+            <p>
+              Reliable representations should preserve information that distinguishes biologically meaningful
+              cell populations even under limited supervision and incomplete observations.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Regulatory Inference</h3>
+            <p>
+              Regulatory analysis requires prioritizing candidate target genes in a transcription-factor-aware
+              manner rather than relying only on aggregate edge-level performance.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Compact Measurement</h3>
+            <p>
+              Practical assays often measure only a small subset of genes, creating a need for compact gene
+              panels that retain both cell identity and stimulus-response information.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span>02</span>
+          <div>
+            <h2>Research Components</h2>
+            <p class="lead">
+              The dissertation consists of three connected studies addressing representation learning at
+              complementary levels of single-cell transcriptomic analysis.
+            </p>
+          </div>
+        </div>
+
+        <article class="study">
+          <div class="study-label">Study I</div>
+          <div class="study-content">
+            <h3>Cell Identity Representation from Single-Cell Transcriptomics</h3>
+            <p>
+              This study investigates transcriptomic representation learning for cell-level inference by combining
+              measured expression with reconstructed transcriptomic information. The framework is designed to
+              improve the robustness of cellular representations under constrained label availability while
+              avoiding information leakage in downstream evaluation.
+            </p>
+            <p class="status">Published in <em>BioData Mining</em>.</p>
+            <div class="links">
+              <a href="#" aria-label="scTrans-SVD paper link placeholder">Paper link</a>
+              <a href="#" aria-label="scTrans-SVD code link placeholder">Code repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="study">
+          <div class="study-label">Study II</div>
+          <div class="study-content">
+            <h3>Transcription Factor–Aware Gene Regulatory Inference</h3>
+            <p>
+              This study develops a transcription-factor-aware framework for regulatory candidate-edge prioritization.
+              It combines graph-derived information and transcriptomic features to rank putative target genes
+              for individual transcription factors, with emphasis on TF-specific prioritization rather than
+              only pooled interaction-level evaluation.
+            </p>
+            <div class="links">
+              <a href="https://github.com/sesh081421/TRACE" target="_blank" rel="noopener">Code repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="study">
+          <div class="study-label">Study III</div>
+          <div class="study-content">
+            <h3>Compact Gene Panel Selection for Cell Identity and Perturbation Response</h3>
+            <p>
+              This study investigates selection of a compact gene panel for joint preservation of cell identity
+              and perturbation response. The study examines whether a small common set of measured genes can
+              retain information needed for both cellular classification and response-sensitive biological
+              inference, while supporting reconstruction of unmeasured expression.
+            </p>
+            <p class="status">Ongoing manuscript preparation.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="results" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <span>03</span>
+          <div>
+            <h2>Results and Performance</h2>
+            <p class="lead">
+              The three studies evaluate representation quality from complementary perspectives: cellular
+              discrimination, TF-centered ranking, and information retention under compact gene measurement.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid two">
+          <article class="result-card">
+            <h3>Cell Identity Representation from Single-Cell Transcriptomics</h3>
+            <p>
+              The study evaluates cell-level prediction under strict label-budget settings and compares
+              measured-only, reconstructed-only, and dual-view representations using consistent folds and
+              random seeds. Macro-F1 is used as the primary evaluation metric.
+            </p>
+          </article>
+          <article class="result-card">
+            <h3>Transcription Factor–Aware Gene Regulatory Inference</h3>
+            <p>
+              TRACE is evaluated using both pooled and per-TF metrics, including AUPRC and TF-specific
+              precision-oriented ranking measures. The analysis emphasizes the distinction between overall
+              candidate-edge discrimination and transcription-factor-specific target prioritization.
+            </p>
+          </article>
+          <article class="result-card">
+            <h3>Compact Gene Panel Selection for Cell Identity and Perturbation Response</h3>
+            <p>
+              ReSPAR evaluates the trade-off between panel size and biological information preservation,
+              focusing on whether compact gene sets can jointly maintain cell-type structure and
+              perturbation-response signals.
+            </p>
+          </article>
+          <article class="result-card">
+            <h3>Dissertation-Level Contribution</h3>
+            <p>
+              Together, the studies demonstrate how task-aware transcriptomic representations can be used
+              to support biological inference across cell identity, gene regulation, and targeted gene
+              measurement.
+            </p>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>Final dissertation version:</strong>
+          Exact tables, figures, and final numerical results can be inserted here after the dissertation
+          results are finalized.
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span>04</span>
+          <div>
+            <h2>Dissertation and Research Resources</h2>
+            <p class="lead">
+              Materials associated with the dissertation will be provided here as they become publicly available.
+            </p>
+          </div>
+        </div>
+
+        <div class="resource-list">
+          <a class="resource" href="assets/files/dissertation.pdf">
+            <span class="resource-title">Dissertation PDF</span>
+            <span class="resource-desc">Full doctoral dissertation</span>
+          </a>
+          <a class="resource" href="https://github.com/sesh081421/TRACE" target="_blank" rel="noopener">
+            <span class="resource-title">Regulatory Inference Source Code</span>
+            <span class="resource-desc">GitHub repository</span>
+          </a>
+          <a class="resource" href="#">
+            <span class="resource-title">Cell Representation Source Code</span>
+            <span class="resource-desc">Add repository URL</span>
+          </a>
+          <a class="resource" href="#">
+            <span class="resource-title">Compact Gene Panel Source Code</span>
+            <span class="resource-desc">Add repository URL when available</span>
+          </a>
+          <a class="resource" href="#">
+            <span class="resource-title">Testing Data</span>
+            <span class="resource-desc">Add external data repository or download page</span>
+          </a>
+          <a class="resource" href="#">
+            <span class="resource-title">Demonstration Video</span>
+            <span class="resource-desc">Add video URL if required</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="references" class="section alt">
+      <div class="container narrow">
+        <div class="section-heading">
+          <span>05</span>
+          <div>
+            <h2>Selected References and Related Sites</h2>
+          </div>
+        </div>
+
+        <ol class="references">
+          <li>
+            Published study on single-cell transcriptomic representation learning. <em>BioData Mining</em>. Replace this line with the final
+            bibliographic information and DOI.
+          </li>
+          <li>
+            Study on transcription factor–aware regulatory inference. Replace this line with final publication or preprint information when available.
+          </li>
+          <li>
+            Study on compact gene panel selection. Replace this line with final publication information when available.
+          </li>
+        </ol>
+
+        <div class="related">
+          <a href="https://www.pusan.ac.kr/" target="_blank" rel="noopener">Pusan National University</a>
+          <a href="https://github.com/sesh081421" target="_blank" rel="noopener">GitHub Profile</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        © 2026–2027 Sanghun Sel · Ph.D. Dissertation · Pusan National University
+      </p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
